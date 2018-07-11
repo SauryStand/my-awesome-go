@@ -1,0 +1,13 @@
+package protocol
+
+const (
+	PROTOCOL_SUM_REQUEST    = 1
+	PROTOCOL_SUM_REPLY      = 2
+	PROTOCOL_CONCAT_REQUEST = 3
+	PROTOCOL_CONCAT_REPLY   = 4
+)
+
+var PROTOCOL_METHOD_MAP = map[int32]string{
+	PROTOCOL_SUM_REQUEST:    "Sum",
+	PROTOCOL_CONCAT_REQUEST: "Concat",
+}
